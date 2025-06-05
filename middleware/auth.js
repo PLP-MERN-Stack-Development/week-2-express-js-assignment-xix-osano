@@ -1,7 +1,7 @@
 // middleware/auth.js
 module.exports = (req, res, next) => {
   const apiKey = req.headers['x-api-key'];
-  if (apiKey && apiKey === process.env.API_KEY) {
+  if (apiKey && apiKey === processclear.env.API_KEY) {
     return next();
   }
 
